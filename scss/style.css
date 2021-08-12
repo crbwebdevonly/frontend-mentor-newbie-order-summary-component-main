@@ -1,0 +1,194 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --dim-bright-blue: hsl(245, 75%, 62%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.outside-container {
+  width: 100%;
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 30%;
+  background-color: var(--pale-blue);
+  padding: 2rem 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .outside-container {
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-size: 100% 50%;
+  }
+}
+
+.inside-container {
+  background-color: white;
+  margin: 0 auto;
+  min-width: 300px;
+  max-width: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header {
+  width: 100%;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  color: var(--dark-blue);
+  padding: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    padding: 0 2rem;
+  }
+}
+
+main h1 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  padding: 1rem 0;
+}
+
+main p {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  padding: 0rem 2rem;
+  text-align: center;
+  color: var(--desaturated-blue);
+  max-width: 330px;
+}
+
+main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--very-pale-blue);
+  border-radius: 20px;
+  margin-top: 1.5rem;
+  font-size: 0.6rem;
+  font-weight: 900;
+}
+
+main section .plan {
+  margin-right: auto;
+}
+
+main section .plan h3 {
+  color: var(--desaturated-blue);
+  margin-top: 5px;
+}
+
+main section span {
+  color: var(--bright-blue);
+  text-decoration: underline;
+  font-size: 0.7rem;
+}
+
+main section span:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+footer {
+  padding: 1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  footer {
+    padding: 1rem 2rem;
+  }
+}
+
+footer button {
+  margin: 1rem 0;
+  padding: 1rem;
+  width: 100%;
+  background-color: var(--bright-blue);
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  -webkit-box-shadow: 0 15px 10px 0px rgba(95, 95, 221, 0.548);
+          box-shadow: 0 15px 10px 0px rgba(95, 95, 221, 0.548);
+}
+
+footer button:hover {
+  cursor: pointer;
+  background-color: var(--dim-bright-blue);
+}
+
+footer span {
+  color: var(--desaturated-blue);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+footer span:hover {
+  cursor: pointer;
+  color: var(--dark-blue);
+}
+/*# sourceMappingURL=style.css.map */
